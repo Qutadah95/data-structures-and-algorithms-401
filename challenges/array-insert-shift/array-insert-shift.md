@@ -4,7 +4,7 @@ we write an function called insert Shift Array without using any built in method
 
 ## Whiteboard Process
 
-![Reverse](cc2.PNG)
+![Reverse](cc2Final.PNG)
 
 ## Approach & Efficiency
 
