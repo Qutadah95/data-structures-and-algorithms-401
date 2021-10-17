@@ -1,8 +1,9 @@
 
-public  class Node<T>{
-    public Node next ;
-    public T value ;
-    public Node (T value ){
-        this.value = value ;
+public class Node {
+    public int value;
+    public Node next;
+
+    public Node(int value) {
+        this.value = value;
     }
 }
