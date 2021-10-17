@@ -1,28 +1,33 @@
-public class LinkedList <T>{
-        Node newNode = new Node (value);
-        newNode.next=head;
-        head = newNode ;
-        };
+import java.util.ArrayList;
 
-        boolean includes (T value){
-        Node current =head ;
-        while(current.next != null){
-        if(current.value.equals(value)){
-        return true;
+public class LinkedList {
+        Node head;
+        public void insert(int value) {
+                Node newNode = new Node( value);
+                        newNode.next = head;
+                        head = newNode;
 
         }
-        current = current.next ;
 
+        public boolean includes(int value) {
+                Node current = head;
+                while (current.next != null) {
+                        if (current.value == value) {
+                                return true;
+                        }
+                        current = current.next;
+                }
+                return false;
         }
-        return false ;
+
+        public String toString() {
+                String newString = "";
+                Node current = head;
+                while (current != null) {
+                        newString += "{" + current.value + "}->";
+                        current = current.next;
+                }
+                newString += "NULL";
+                return newString;
         }
-@override
-Public String toString (){
-        Node current = head ;
-        while(current !=null){
-        result+="{"+current.value+"}->";
-        current = current.next;
-        }
-        result +="Null";
-        return result;
-        }
+}
