@@ -44,4 +44,13 @@ public class App {
 
         list2.insertAfter(5,45);
         System.out.println(list2);
+        System.out.println("cc7\n");
+        System.out.println("kth function\n");
+        LinkedList list3=new LinkedList();
+        list3.append(1);
+        list3.append(2);
+        list3.append(3);
+        list3.append(4);
+        System.out.println(list3.getKthFromEnd(3));
+
 } }
