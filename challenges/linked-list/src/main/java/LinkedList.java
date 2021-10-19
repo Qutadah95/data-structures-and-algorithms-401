@@ -84,6 +84,22 @@ public class LinkedList {
                         }
 
         }
+        public String getKthFromEnd(int k) {
+                int counter = 0;
+                ArrayList<Integer> values = new ArrayList<>();
+                        Node current = head;
+                        while (current != null) {
+                                values.add(current.value);
+                                current = current.next;
+                                counter++;
+                        }
+                        if (k < 0 || k > counter) {
+                                return "Exception";
+                        }
+                        return  "Linked list = "+ values + "\n\nindex = ( "+k+" ) \n\n"+"value = ( "+values.get((counter - 1) - k)+" ) ";
+
+
+        }
 
 
 }
