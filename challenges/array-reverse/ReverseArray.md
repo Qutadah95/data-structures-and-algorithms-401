@@ -4,7 +4,7 @@ we write an function called reverse array without using any built in method to r
 
 ## Whiteboard Process
 
-![Reverse](Reverse.PNG)
+![Reverse](cc1Final.PNG)
 
 ## Approach & Efficiency
 
