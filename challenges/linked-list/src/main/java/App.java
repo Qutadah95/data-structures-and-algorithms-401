@@ -1,5 +1,4 @@
 public class App {
-
     public static void main(String[] args) {
         System.out.println("CC5\n");
         LinkedList list=new LinkedList();
@@ -13,7 +12,6 @@ public class App {
         System.out.println("===================================\n");
         Node head= list.head;
         System.out.println("===================================\n");
-
         System.out.println("the linked list elements :");
             Node current = head;
             while (current != null) {
@@ -24,7 +22,6 @@ public class App {
         System.out.println(list.toString());
         System.out.println("===================================\n");
         System.out.println("CC6\n");
-
         LinkedList list2=new LinkedList();
         System.out.println("===================================\n");
         System.out.println("append");
@@ -41,10 +38,11 @@ public class App {
         System.out.println("===================================\n");
         System.out.println("insert After");
         System.out.println("===================================\n");
-
         list2.insertAfter(5,45);
         System.out.println(list2);
-        System.out.println("cc7\n");
+        System.out.println("===================================\n");
+        System.out.println("--------CC7----------");
+        System.out.println("===================================\n");
         System.out.println("kth function\n");
         LinkedList list3=new LinkedList();
         list3.append(1);
@@ -52,5 +50,26 @@ public class App {
         list3.append(3);
         list3.append(4);
         System.out.println(list3.getKthFromEnd(3));
-
+        System.out.println("===================================\n");
+        System.out.println("--------CC8----------");
+        System.out.println("===================================\n");
+        LinkedList list4=new LinkedList();
+        list4.append(1);
+        list4.append(3);
+        list4.append(2);
+        System.out.println(" First list\n ");
+        System.out.println(list4.toString());
+        LinkedList list5=new LinkedList();
+        list5.append(5);
+        list5.append(9);
+        list5.append(4);
+        System.out.println("===================================\n");
+        System.out.println(" second list\n");
+        System.out.println(list5.toString());
+        System.out.println("===================================\n");
+        LinkedList zipList=new LinkedList();
+        zipList.head=zipList.zipLists(list4,list5);
+        System.out.println(" zipList \n");
+        System.out.println(zipList.toString());
+        System.out.println("===================================\n");
 } }
