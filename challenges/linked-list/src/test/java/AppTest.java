@@ -4,6 +4,40 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 class AppTest {
+    //cc6
+    @Test
+    void testInsertMethod() {
+        System.out.println("Test SUCCESS");
+        LinkedList list = new LinkedList();
+        list.insert(3);
+        list.insert(33);
+        list.insert(333);
+        list.insert(3333);
+        String expected = "{3333}->{333}->{33}->{3}->NULL";
+        String actual = list.toString();
+        assertEquals(expected, actual);
+    }
+    @Test
+    void testIncludesMethod() {
+        System.out.println("Test SUCCESS");
+        LinkedList list = new LinkedList();
+        list.insert(5);
+        list.insert(55);
+        list.insert(555);
+        assertEquals(true, list.includes(55));
+        assertEquals(false, list.includes(60));
+    }
+
+    @Test
+    void testToStringMethod() {
+        System.out.println("Test SUCCESS");
+        LinkedList list = new LinkedList();
+        list.insert(5);
+        list.insert(55);
+        String expected = "{55}->{5}->NULL";
+        assertEquals(expected, list.toString());
+    }
+    // cc7
     @Test
     void testAppendMethodHappyPath() {
         System.out.println("1th Test SUCCESS");
