@@ -17,7 +17,6 @@ public class App {
             while (current != null) {
                 System.out.println(current.value);
                 current = current.next;
-
         }
         System.out.println("===================================\n");
         System.out.println(list.toString());
