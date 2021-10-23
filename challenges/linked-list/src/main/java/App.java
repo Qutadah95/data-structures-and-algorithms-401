@@ -17,6 +17,7 @@ public class App {
             while (current != null) {
                 System.out.println(current.value);
                 current = current.next;
+
         }
         System.out.println("===================================\n");
         System.out.println(list.toString());
@@ -51,7 +52,7 @@ public class App {
         list3.append(4);
         System.out.println(list3.getKthFromEnd(3));
         System.out.println("===================================\n");
-        System.out.println("--------CC8----------");
+        System.out.println("CC8");
         System.out.println("===================================\n");
         LinkedList list4=new LinkedList();
         list4.append(1);
