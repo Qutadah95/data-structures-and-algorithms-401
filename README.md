@@ -8,4 +8,4 @@
 | Code-Challenge-2      | [array insert shift](challenges/array-insert-shift/array-insert-shift.md)      |
 | Code-Challenge-3      | [array binary search](challenges/array-binary-search/array-binary-search.md)      |
 | Code-Challenge-5      | [Linked-List](challenges/linked-list/linked-list.md)      |
-| Code-Challenge-6      | [stack-and-queue](challenges/stack-and-queue/stack-and-queue.md)      |
+| Code-Challenge-6      | [stack-and-queue](challenges/stack-and-queue/readme.md)      |
