@@ -29,3 +29,24 @@ for all method complexity : O(1)
 * deQueue: delete the front of the queue.
 * peek for stack :return the top node value.
 * peek for queue : return the front node value.
+
+# Challenge Summary
+<!-- Description of the challenge -->
+
+Implement a Queue using two Stacks.
+
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![](C:\401java\newData\data-structures-and-algorithms-401\challenges\stack-and-queue\img\cc11.PNG)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+enqueue : space and time O(1)
+dequeue : space and time O(n)
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+input 10 , 15 , 20 , 5 
+
+output PseudoQueue{stack1=NULL, stack2=top -> 15 -> 20 -> 5 -> null}
+15
