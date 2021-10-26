@@ -7,19 +7,23 @@ private Queue<dogs>dog;
         this.dog = dog;
     }
 
-    public Queue<cats> getCat() {
-        return cat;
+    public AnimalShelter() {
+        dog = new Queue<dogs>();
+        cat = new Queue<cats>();
     }
-
-    public void setCat(Queue<cats> cat) {
-        this.cat = cat;
+    public void enqueue(dogs dogs) {
+        dog.enqueue(dogs);
     }
-
-    public Queue<dogs> getDog() {
-        return dog;
+    public void enqueue(cats cats) {
+        cat.enqueue(cats);
     }
-
-    public void setDog(Queue<dogs> dog) {
-        this.dog = dog;
+    public Animal dequeue(String animal) {
+        if (animal.toLowerCase().equals("dog")) {
+            return dog.dequeue();
+        } else if (animal.toLowerCase().equals("cat")) {
+            return cat.dequeue();
+        } else {
+            return null;
+        }
     }
 }

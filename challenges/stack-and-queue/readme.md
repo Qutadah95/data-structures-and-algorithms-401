@@ -50,3 +50,24 @@ input 10 , 15 , 20 , 5
 
 output PseudoQueue{stack1=NULL, stack2=top -> 15 -> 20 -> 5 -> null}
 15
+
+
+# Challenge Summary
+<!-- Description of the challenge -->
+
+build a animal shilter that take dog and cat using enqueue and dequeue.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![](C:\401java\newData\data-structures-and-algorithms-401\challenges\stack-and-queue\img\cc12.PNG)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+enqueue : space and time O(1)
+dequeue : space and time O(1)
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+input cat1 , cat2 , dog , mouse 
+
+output 
+cat2 , dog

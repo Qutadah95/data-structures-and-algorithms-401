@@ -15,7 +15,6 @@ public class pseudoQueue<T> {
                 stack2.push(stack1.pop());
             }
             return stack2.pop();
-
     }
 
     @Override
