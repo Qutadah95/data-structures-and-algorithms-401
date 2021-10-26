@@ -71,3 +71,29 @@ input cat1 , cat2 , dog , mouse
 
 output 
 cat2 , dog
+
+# Challenge Summary
+<!-- Description of the challenge -->
+
+build a checker for bracket if the bracket open 
+and close return truth else return false
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![](C:\401java\newData\data-structures-and-algorithms-401\challenges\stack-and-queue\img\cc13.PNG)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+enqueue : space and time O(n)
+dequeue : space and time O(n)
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+input {90}
+
+output
+true 
+
+input ({90}
+
+output
+false
