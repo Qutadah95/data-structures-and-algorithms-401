@@ -1,5 +1,5 @@
 public class BinarySearchTree<T> extends BinaryTree {
-    private Node<Integer> root;
+    private Node root;
     private boolean exist=false;
 
     public BinarySearchTree(Node root) {
@@ -10,8 +10,8 @@ public class BinarySearchTree<T> extends BinaryTree {
     public void add(T value){
         Node newNode=new Node(value);
 
-    }
-//    if( value <  root.getValue()){
+//
+//    if((int) value < (int) root.getValue()){
 //            if(root.getLeftChild()!=null){
 //                root=root.getLeftChild();
 //                add(value);
@@ -20,7 +20,7 @@ public class BinarySearchTree<T> extends BinaryTree {
 //                root.setLeftChild(newNode);
 //            }
 //        }
-//        else if( value >  root.getValue()){
+//        else if((int) value > (int) root.getValue()){
 //            if(root.getRightChild()!=null){
 //                root=root.getRightChild();
 //                add(value);
@@ -29,7 +29,7 @@ public class BinarySearchTree<T> extends BinaryTree {
 //                root.setRightChild(newNode);
 //            }
 //        }
-
+    }
     public boolean contains(T value) {
         containsMethod(value);
         return this.exist;
