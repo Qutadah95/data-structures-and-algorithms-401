@@ -23,17 +23,19 @@ postOrder=>  (Left,Right,Root)
 <!-- Description of the challenge -->
 
 cc 16
-Write a function called breadth first
-Arguments: tree
-Return: list of all values in the tree, in the order they were encountered
+Write the following method for the Binary Tree class
+
+find maximum value
+Arguments: none
+Returns: number
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](D:\data-structures-and-algorithms-401\challenges\trees\img\cc17.PNG)
+![](D:\data-structures-and-algorithms-401\challenges\trees\img\cc16.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-time and space have O(n)
+time  O(n) , space  O(1)
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 
