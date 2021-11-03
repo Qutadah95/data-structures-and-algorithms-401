@@ -5,7 +5,95 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
+    @Test public
+    void testInstantiate() {
+        BinaryTree binaryTree = new BinaryTree();
+        assertEquals("BinaryTree{preOrderArray=[], inOrderArray=[], postOrderArray=[]}", binaryTree.toString());
+    }
 
+    @Test public
+    void testInstantiateSingle() {
+        Node<Integer> root = new Node(100);
+        BinarySearchTree binarySearchTree = new BinarySearchTree(root);
+        assertEquals("BinarySearchTree{root=Node{value=null, leftChild=null, rightChild=null}, isItExist=false, preOrderArray=[], inOrderArray=[], postOrderArray=[]}", binarySearchTree.toString());
+    }
+
+    @Test public
+    void testAddLeftAndRightChildToNode() {
+        Node<Integer> leftChild = new Node<>(5);
+        Node<Integer> rightChild = new Node<>(10);
+        Node<Integer> root = new Node(100, leftChild, rightChild);
+        assertEquals("Node{value=100, leftChild=Node{value=null, leftChild=null, rightChild=null}, rightChild=Node{value=null, leftChild=null, rightChild=null}}", root.toString());
+    }
+    @Test public
+    void testPreOrderTraversal() {
+        Node<Integer> node4 = new Node(80);
+        Node<Integer> node5 = new Node(95);
+        Node<Integer> node6 = new Node(110);
+
+        Node<Integer> node2 = new Node(90, node4, node5);
+        Node<Integer> node3 = new Node(120, node6, null);
+
+        Node<Integer> root = new Node(100, node2, node3);
+        BinaryTree binaryTree = new BinaryTree();
+        assertEquals("[100, 90, null, null, 120, null]", binaryTree.preOrder(root).toString());
+    }
+    @Test public
+    void testInOrderTraversal() {
+        Node<Integer> node4 = new Node(80);
+        Node<Integer> node5 = new Node(95);
+        Node<Integer> node6 = new Node(110);
+
+        Node<Integer> node2 = new Node(90, node4, node5);
+        Node<Integer> node3 = new Node(120, node6, null);
+
+        Node<Integer> root = new Node(100, node2, node3);
+        BinaryTree binaryTree = new BinaryTree();
+        assertEquals("[null, 90, null, 100, null, 120]", binaryTree.inOrder(root).toString());
+    }
+    @Test public
+    void testPostOrderTraversal() {
+        Node<Integer> node4 = new Node(80);
+        Node<Integer> node5 = new Node(95);
+        Node<Integer> node6 = new Node(110);
+
+        Node<Integer> node2 = new Node(90, node4, node5);
+        Node<Integer> node3 = new Node(120, node6, null);
+
+        Node<Integer> root = new Node(100, node2, node3);
+        BinaryTree binaryTree = new BinaryTree();
+        assertEquals("[null, null, 90, null, 120, 100]", binaryTree.postOrder(root).toString());
+    }
+    @Test public
+    void testAddNodeToTree() {
+        Node<Integer> node4 = new Node(80);
+        Node<Integer> node5 = new Node(95);
+        Node<Integer> node6 = new Node(110);
+
+        Node<Integer> node2 = new Node(90, node4, node5);
+        Node<Integer> node3 = new Node(120, node6, null);
+
+        Node<Integer> root = new Node(100, node2, node3);
+        Integer valueToAdd=140;
+        BinarySearchTree binarySearchTreeAdd = new BinarySearchTree(root);
+        binarySearchTreeAdd.add(valueToAdd);
+        assertEquals("[null, 90, null, 100, null, 120]",binarySearchTreeAdd.inOrder(root).toString());
+    }
+
+    @Test public
+    void testBreadthFirstTraverse() {
+        Node<Integer> node4 = new Node(80);
+        Node<Integer> node5 = new Node(95);
+        Node<Integer> node6 = new Node(110);
+
+        Node<Integer> node2 = new Node(90, node4, node5);
+        Node<Integer> node3 = new Node(120, node6, null);
+
+        Node<Integer> root = new Node(100, node2, node3);
+        BinaryTree binaryTree=new BinaryTree();
+
+        assertEquals("[]",binaryTree.breadthFirst(root).toString());
+    }
         @Test public
         void fizzBuzzTests() {
             KTree ktree = new KTree();
