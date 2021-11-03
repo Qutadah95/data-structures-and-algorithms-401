@@ -1,3 +1,24 @@
+# Trees
+<!-- Short summary or background information -->
+
+Trees are non-linear data structures. They are often used to represent hierarchical data. For a real-world example,
+a hierarchical company structure uses a tree to organize.
+
+## Challenge
+<!-- Description of the challenge -->
+
+creat a node and binary tree and binary search tree
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+preOrder & inOrder & postOrder have O(n)
+## API
+<!-- Description of each method publicly available in each of your trees -->
+Submission Instructions
+preOrder =>  (Root,Left,Right)
+inOrder =>  (Left,Root,Right)
+postOrder=>  (Left,Right,Root)
+
 # Challenge Summary
 <!-- Description of the challenge -->
 
