@@ -210,4 +210,24 @@ public class AppTest {
         assertEquals("AnimalShelter{dogs=NULL, cats=front -> Cat : catty -  type : cat <- rear}",
                 animalShelter.toString());
     }
+    @Test
+    void testBracketValidator() {
+        System.out.println("test 21 SUCCESS");
+        brackets bracketsValidator=new brackets();
+        String stringValueToValidate="{()()}";
+        assertEquals(true,
+                bracketsValidator.validateBrackets(stringValueToValidate));
+        String stringValueToValidate1="{()(}";
+        assertEquals(false,
+                bracketsValidator.validateBrackets(stringValueToValidate1));
+        String stringValueToValidate2="{";
+        assertEquals(false,
+                bracketsValidator.validateBrackets(stringValueToValidate2));
+        String stringValueToValidate3="{}{Code}[Fellows](())";
+        assertEquals(true,
+                bracketsValidator.validateBrackets(stringValueToValidate3));
+        String stringValueToValidate4="{)";
+        assertEquals(false,
+                bracketsValidator.validateBrackets(stringValueToValidate4));
+    }
 }
