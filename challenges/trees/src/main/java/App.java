@@ -28,7 +28,7 @@ public class App {
         BinarySearchTree binarySearchTreeContains = new BinarySearchTree(root);
         System.out.println("Is the tree contains " + searchValue + " ? the result is : "
                 + binarySearchTreeContains.contains(searchValue));
-//        System.out.println("\n Tree max");
+        System.out.println("\n Tree max");
 //        System.out.println(binaryTree.treeMax(root));
 
         System.out.println("breadth first");
