@@ -75,7 +75,7 @@ Return: new k-ary tree
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](D:\data-structures-and-algorithms-401\challenges\trees\img\cc18.PNG)
+![](D:\data-structures-and-algorithms-401\challenges\trees\img\cc18rrr.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
