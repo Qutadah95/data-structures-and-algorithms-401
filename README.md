@@ -10,3 +10,4 @@
 | Code-Challenge-5      | [Linked-List](challenges/linked-list/linked-list.md)      |
 | Code-Challenge-6      | [stack-and-queue](challenges/stack-and-queue/readme.md)      |
 | Code-Challenge-7      | [trees](challenges/trees/ReadMe.md)      |
+| Code-Challenge-8      | [insertion-sort](challenges/insertion-sort/Readme.md)      |
