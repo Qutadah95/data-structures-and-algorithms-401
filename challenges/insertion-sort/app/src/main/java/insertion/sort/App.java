@@ -15,12 +15,13 @@ public class App {
 
         System.out.println(new App().getGreeting());
         int[] array = {8,4,23,42,16,15};
+        int[] array1={3,7,8,5,2,1,9,5,4};
         System.out.println("insertionSort\n");
         System.out.println(Arrays.toString(insertionSort(array)));
         System.out.println("mergeSort\n");
         System.out.println(Arrays.toString(mergeSort(array)));
         System.out.println("quickSort\n");
-        System.out.println(Arrays.toString(quickSort(array,0,5)));
+        System.out.println(Arrays.toString(quickSort(array1,0,8)));
 
 
 

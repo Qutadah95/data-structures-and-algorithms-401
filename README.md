@@ -11,3 +11,5 @@
 | Code-Challenge-6      | [stack-and-queue](challenges/stack-and-queue/readme.md)      |
 | Code-Challenge-7      | [trees](challenges/trees/ReadMe.md)      |
 | Code-Challenge-8      | [insertion-sort](challenges/insertion-sort/Readme.md)      |
+| Code-Challenge-9      | [Merge_Sort](challenges/insertion-sort/Readme.md)      |
+| Code-Challenge-10      | [Quick_Sort](challenges/insertion-sort/Readme.md)      |
