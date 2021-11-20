@@ -3,6 +3,7 @@
 Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time.
 
 ## Pseudocode
+
 InsertionSort(int[] arr)
 
     FOR i = 1 to arr.length
@@ -40,7 +41,16 @@ now this is the last index so it is the largest number, so it will be swipped wi
 
 ![](./img/cc26b.PNG)
 
+## Efficency
 
+if we provide an already sorted array to the insertion sort algorithm, it will still execute the outer for loop, thereby requiring n steps to sort an already sorted array of n elements, which makes its best case time complexity a linear function of n.
+
+Wherein for an unsorted array, it takes for an element to compare with all the other elements which mean every n element compared with all other n elements. Thus, making it for n x n, i.e., n2 comparisons.
+
+Insertion sort uses no extra space.Therefore , it has space complexity of O(1).
+
+Time: O(n^2)
+Space: O(1)
 # Merge Sort
 
 Sorting an array by dividing it to two half each time until it is sorted from the smallest to the largest number and then merge it.
@@ -107,6 +117,16 @@ Final iteration will be the finished merged array.
 
 ![](./img/blogs27.PNG)
 
+## Efficency
+
+This is a divide-and-conquer algorithm, so it takes O(n log n) time—that’s n steps to merge arrays, log n times.
+Since at any given time, it only ever needs n elements stored in arrays to merge, it uses O(n) space.
+
+big o :
+
+ time :  O(n log(n)) 
+ 
+ space: O(n)
 
 # Quick Sort
 
@@ -168,3 +188,12 @@ repit it until i have a sorted array
 ![](./img/blog28.PNG)
 
 
+## Efficency
+
+This is a divide-and-conquer algorithm, so, best case, it takes O(n log n) time—that’s n steps to partition the array, log n times.
+Since at any step in the process, it only swaps elements within the array, it uses O(1) space.
+
+
+time : O(n log n)
+
+space : O(1)
