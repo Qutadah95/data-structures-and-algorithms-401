@@ -25,5 +25,5 @@ class AppTest {
         assertEquals("two",test.get(2));
         assertEquals(9,test.hashTableStringKey ("hi"));
     }
-    
+
 }
