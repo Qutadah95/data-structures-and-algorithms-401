@@ -1,5 +1,7 @@
 package hashtable;
 
+import java.util.Locale;
+
 public class hashTable<T> {
     Node <T> [] array;
     int size;
@@ -89,6 +91,18 @@ public class hashTable<T> {
             }
         }
         return  result;
+    }
+    public static String repeatedWord(String hashString){
+
+        String[] repeatedWord = hashString.split(" ");
+        for (int i=0;i<repeatedWord.length;i++){
+            for (int j=0;j<i;j++){
+
+                if (repeatedWord[i].equals(repeatedWord[j].toLowerCase()))
+                    return repeatedWord[i].toLowerCase();
+            }
+        }
+        return "no repeated words";
     }
 
 }

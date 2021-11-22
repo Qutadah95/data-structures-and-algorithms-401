@@ -22,6 +22,10 @@ public class App {
 
         HashTable.add("t","tt");
         System.out.println(HashTable.get("t"));
+        System.out.println("**********************");
+        String x="\"Once upon a time, there was a brave princess who...\"";
+
+        System.out.println("**********************");
 
 
     }
