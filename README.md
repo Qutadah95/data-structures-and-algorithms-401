@@ -13,5 +13,7 @@
 | Code-Challenge-8      | [insertion-sort](challenges/insertion-sort/Readme.md)      |
 | Code-Challenge-9      | [Merge_Sort](challenges/insertion-sort/Readme.md)      |
 | Code-Challenge-10      | [Quick_Sort](challenges/insertion-sort/Readme.md)      |
-| Code-Challenge-10      | [Hash_Table](challenges/hashTable/ReadMe.md)      |
-| Code-Challenge-10      | [Hash_Table_repeated_word](challenges/hashTable/ReadMe.md)      |
+| Code-Challenge-11      | [Hash_Table](challenges/hashTable/ReadMe.md)      |
+| Code-Challenge-12      | [Hash_Table_repeated_word](challenges/hashTable/ReadMe.md)      |
+| Code-Challenge-13      | [TreeIntersection](challenges/TreeIntersection/ReadMe.md)      |
+
