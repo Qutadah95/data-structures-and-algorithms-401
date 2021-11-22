@@ -7,7 +7,7 @@ Using your Hashmap implementation as a part of your algorithm, return a set of v
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![d](/img/cc32.PNG)
+![d](./img/cc32.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
