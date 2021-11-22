@@ -54,3 +54,28 @@ contains(T key) --> takes key as an Arguments and Returns Boolean, indicating if
 
 
 hash function --> takes key as an Arguments key and Returns Index in the collection for that key.
+
+# hashmap-repeated-word
+<!-- Short summary or background information -->
+
+problem domain
+
+
+Write a function called repeated word that finds the first word to occur more than once in a string
+Arguments: string
+Return: string
+
+## Challenge
+<!-- Description of the challenge -->
+![](./img/cc31.PNG)
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+time : O(n^2)
+
+
+space : O(n)
+
+
+
+
+

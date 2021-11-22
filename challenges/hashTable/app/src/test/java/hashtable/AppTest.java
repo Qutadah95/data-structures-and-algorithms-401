@@ -25,5 +25,8 @@ class AppTest {
         assertEquals("two",test.get(2));
         assertEquals(9,test.hashTableStringKey ("hi"));
     }
-
+    @Test void firstRepeatedWord() throws Exception{
+        hashTable hashMap= new hashTable(7);
+        assertEquals("a", hashMap.repeatedWord("Once upon a time, there was a brave princess who..."));
+}
 }
