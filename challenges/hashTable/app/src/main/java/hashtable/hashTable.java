@@ -1,6 +1,6 @@
 package hashtable;
 
-import java.util.Locale;
+import java.util.*;
 
 public class hashTable<T> {
     Node <T> [] array;
