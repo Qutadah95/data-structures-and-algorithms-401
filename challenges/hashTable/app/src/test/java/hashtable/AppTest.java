@@ -4,6 +4,10 @@ package hashtable;/*
 
 
 import org.junit.jupiter.api.Test;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -28,5 +32,24 @@ class AppTest {
     @Test void firstRepeatedWord() throws Exception{
         hashTable hashMap= new hashTable(7);
         assertEquals("a", hashMap.repeatedWord("Once upon a time, there was a brave princess who..."));
+}
+@Test void leftFunction(){
+    Map<String,String> mapOne=new HashMap<>();
+    Map<String,String> mapTwo=new HashMap<>();
+
+    mapOne.put("fond","enamored");
+    mapOne.put("wrath","anger");
+    mapOne.put("diligent","employed");
+    mapOne.put("outfit","garb");
+    mapOne.put("guide","usher");
+
+    mapTwo.put("fond","averse");
+    mapTwo.put("wrath","delight");
+    mapTwo.put("diligent","idle");
+    mapTwo.put("guide","follow");
+    mapTwo.put("flow","jam");
+
+
+    assertEquals("{diligent=[employed, null], outfit=[garb, null], wrath=[anger, null], guide=[usher, null], fond=[enamored, null]}",App.leftJoins(mapOne,mapTwo).toString());
 }
 }
