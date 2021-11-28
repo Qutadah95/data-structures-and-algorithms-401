@@ -16,4 +16,6 @@
 | Code-Challenge-11      | [Hash_Table](challenges/hashTable/ReadMe.md)      |
 | Code-Challenge-12      | [Hash_Table_reapeated_word](challenges/hashTable/ReadMe.md)      |
 | Code-Challenge-13      | [hashmap-left-join](challenges/hashTable/ReadMe.md)      |
+| Code-Challenge-14      | [graph](challenges/graph/README.md)      |
+| Code-Challenge-15      | [graph-breadth-first](challenges/graph/README.md)      |
 
