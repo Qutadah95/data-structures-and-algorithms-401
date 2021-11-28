@@ -17,6 +17,10 @@
 | Code-Challenge-12      | [TreeIntersection](challenges/TreeIntersection/ReadMe.md)      |
 | Code-Challenge-13     | [Hash_Table_reapeated_word](challenges/hashTable/ReadMe.md)      |
 | Code-Challenge-14     | [hashmap-left-join](challenges/hashTable/ReadMe.md)      |
+| Code-Challenge-15      | [Hash_Table_reapeated_word](challenges/hashTable/ReadMe.md)      |
+| Code-Challenge-16     | [hashmap-left-join](challenges/hashTable/ReadMe.md)      |
+| Code-Challenge-17     | [graph](challenges/graph/README.md)      |
+| Code-Challenge-18     | [graph-breadth-first](challenges/graph/README.md)      |
 
 
 
