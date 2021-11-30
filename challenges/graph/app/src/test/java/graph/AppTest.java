@@ -4,6 +4,7 @@
 package graph;
 
 import org.junit.jupiter.api.Test;
+import org.w3c.dom.Node;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -100,5 +101,36 @@ class AppTest {
         assertEquals("Monstroplolis",breadthFirst.get(3).value);
         assertEquals("Narnia",breadthFirst.get(4).value);
         assertEquals("Naboo",breadthFirst.get(5).value);
+    }
+    @Test void businessTrip() {
+        Graph businessTrip = new Graph();
+        Vertex a = businessTrip.addNode("Pandora");
+        Vertex b = businessTrip.addNode("Arendelle");
+        Vertex c = businessTrip.addNode("Metroville");
+        Vertex d = businessTrip.addNode("Monstropolis");
+        Vertex e = businessTrip.addNode("Narnia");
+        Vertex f = businessTrip.addNode("Naboo");
+
+        businessTrip.addEdge(a, b, 150);
+        businessTrip.addEdge(b, c, 99);
+        businessTrip.addEdge(a, c, 82);
+        businessTrip.addEdge(b, d, 42);
+        businessTrip.addEdge(c, d, 105);
+        businessTrip.addEdge(c, e, 37);
+        businessTrip.addEdge(c, f, 26);
+        businessTrip.addEdge(d, f, 73);
+        businessTrip.addEdge(e, f, 250);
+
+        System.out.println("\n\n");
+        String[] trip1 = {"Metroville", "Pandora"};
+        String[] trip2 = {"Arendelle", "Monstropolis", "Naboo"};
+        String[] trip3 = {"Naboo", "Pandora"};
+        String[] trip4 = {"Narnia", "Arendelle", "Naboo"};
+
+        assertEquals("True,$82" , businessTrip.businessTrip(trip1));
+        assertEquals("True,$115" , businessTrip.businessTrip(trip2));
+        assertEquals("False,$0" , businessTrip.businessTrip(trip3));
+        assertEquals("False,$0" , businessTrip.businessTrip(trip4));
+
     }
 }

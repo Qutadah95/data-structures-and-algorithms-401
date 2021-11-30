@@ -59,4 +59,24 @@ Time :BigO(n^2) because I have nested loop
 
 Space : BigO(n) because create a list
 
+# Challenge Summary
+<!-- Description of the challenge -->
+problem domain
+Write a function called business trip
+Arguments: graph, array of city names
+Return: cost or null
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+![](./img/cc37.PNG)
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+big O(n)
+
+Time :BigO(n) because I have a loop
+
+Space : BigO(1) 
+
+
 
