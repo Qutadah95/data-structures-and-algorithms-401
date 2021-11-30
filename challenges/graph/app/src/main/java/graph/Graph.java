@@ -73,7 +73,7 @@ public class Graph <T>{
     public String businessTrip(String [] placeList) {
         int cost = 0;
         for (int i = 0; i < placeList.length -1; i++) {
-            if (getNeighbors(placeList[i]).contains(new Node<>(placeList[i+1]))) {
+            if (getNeighbors(placeList[i]).contains(new Vertex<>(placeList[i+1]))) {
                 cost += weightList.get(placeList[i] +placeList[i+1]);
             } else {
                 return "False,$0";

@@ -69,7 +69,7 @@ Return: cost or null
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![](./img/cc37.PNG)
+![](./img/cc37b.PNG)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 big O(n)
