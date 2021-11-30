@@ -79,4 +79,27 @@ Time :BigO(n) because I have a loop
 Space : BigO(1) 
 
 
+# Challenge Summary
+<!-- Description of the challenge -->
+problem domain
+Write the following method for the Graph class:
+
+Name: Depth first
+Arguments: Node (Starting point of search)
+Return: A collection of nodes in their pre-order depth-first traversal order
+Program output: Display the collection
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+![](./img/cc.PNG)
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+big O(n)
+
+Time Complexity : BigO(n) because I haven't a nested loop
+
+Space Complexity: BigO(1) because Iam don't create a list
+ 
 
