@@ -21,6 +21,7 @@
 | Code-Challenge-16     | [hashmap-left-join](challenges/hashTable/ReadMe.md)      |
 | Code-Challenge-17     | [graph](challenges/graph/README.md)      |
 | Code-Challenge-18     | [graph-breadth-first](challenges/graph/README.md)      |
+| Code-Challenge-18     | [graph-business-trip](challenges/graph/README.md)      |
 
 
 
