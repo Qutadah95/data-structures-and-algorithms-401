@@ -133,4 +133,41 @@ class AppTest {
         assertEquals("False,$0" , businessTrip.businessTrip(trip4));
 
     }
+    @Test void depthFirst() {
+
+        Graph<String> graph = new Graph<>();
+
+        Vertex a = graph.addNode("A");
+        Vertex b =  graph.addNode("B");
+        Vertex c = graph.addNode("C");
+        Vertex d = graph.addNode("D");
+        Vertex e = graph.addNode("E");
+        Vertex f = graph.addNode("F");
+        Vertex g = graph.addNode("G");
+        Vertex h = graph.addNode("H");
+
+
+        graph.addEdge(a,b);
+        graph.addEdge(a,d);
+        graph.addEdge(b,c);
+        graph.addEdge(b,d);
+        graph.addEdge(c,g);
+        graph.addEdge(d,e);
+        graph.addEdge(d,h);
+        graph.addEdge(d,f);
+        graph.addEdge(h,f);
+
+
+        List<Vertex<String>> result = new ArrayList<>();
+        result.add(a);
+        result.add(b);
+        result.add(c);
+        result.add(g);
+        result.add(d);
+        result.add(e);
+        result.add(h);
+        result.add(f);
+
+        assertEquals(result , graph.depthFirst(a));
+    }
 }
